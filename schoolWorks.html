@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Training | Staff Directory</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #222;
+        }
+
+        /* HEADER */
+        header {
+            background: #0a3d62;
+            color: #fff;
+            padding: 30px 8%;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 50px 8%;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #0a3d62;
+        }
+
+        /* INFO BOX */
+        .info-box {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            line-height: 1.8;
+        }
+
+        /* STAFF TABLE */
+        .table-container {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: #0a3d62;
+            color: #ffffff;
+        }
+
+        th,
+        td {
+            padding: 15px 18px;
+            text-align: left;
+        }
+
+        th {
+            font-size: 1rem;
+        }
+
+        td {
+            font-size: 0.95rem;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        tr:hover {
+            background: #f1f7ff;
+        }
+
+        /* ROLE TAGS */
+        .role {
+            padding: 6px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .teacher {
+            background: #1e90ff;
+        }
+
+        .admin {
+            background: #27ae60;
+        }
+
+        .it {
+            background: #8e44ad;
+        }
+
+        .support {
+            background: #e67e22;
+        }
+
+        /* CONTACT LINKS */
+        a {
+            color: #0a3d62;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* LOCATION CARDS */
+        .locations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .location-card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .location-card h3 {
+            margin-bottom: 10px;
+            color: #0a3d62;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0a3d62;
+            color: #ffffff;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>School Training Portal</h1>
+        <p>Welcome new hires — find staff contacts, roles, and office locations</p>
+    </header>
+
+    <!-- INTRO -->
+    <section>
+        <h2>Welcome</h2>
+        <div class="info-box">
+            <p>
+                This internal training website helps new staff members quickly connect
+                with colleagues across departments. Use the directory below to find
+                contact details, job roles, and office locations.
+            </p>
+        </div>
+    </section>
+
+    <!-- STAFF DIRECTORY -->
+    <section>
+        <h2>Staff Directory</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Office Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sarah Johnson</td>
+                        <td><span class="role teacher">Teacher</span></td>
+                        <td><a href="mailto:sarah.johnson@school.edu">sarah.johnson@school.edu</a></td>
+                        <td>+61 400 123 456</td>
+                        <td>Building A – Room 204</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Brown</td>
+                        <td><span class="role admin">Administration</span></td>
+                        <td><a href="mailto:michael.brown@school.edu">michael.brown@school.edu</a></td>
+                        <td>+61 400 234 567</td>
+                        <td>Main Office – Level 1</td>
+                    </tr>
+                    <tr>
+                        <td>Linda Chen</td>
+                        <td><span class="role it">IT Support</span></td>
+                        <td><a href="mailto:linda.chen@school.edu">linda.chen@school.edu</a></td>
+                        <td>+61 400 345 678</td>
+                        <td>IT Wing – Room 110</td>
+                    </tr>
+                    <tr>
+                        <td>James Wilson</td>
+                        <td><span class="role support">Student Support</span></td>
+                        <td><a href="mailto:james.wilson@school.edu">james.wilson@school.edu</a></td>
+                        <td>+61 400 456 789</td>
+                        <td>Building C – Room 15</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- LOCATIONS -->
+    <section>
+        <h2>Office Locations</h2>
+        <div class="locations">
+
+            <div class="location-card">
+                <h3>Building A</h3>
+                <p>Teaching staff offices and classrooms.</p>
+            </div>
+
+            <div class="location-card">
+                <h3>Main Office</h3>
+                <p>Administration, HR, and management.</p>
+            </div>
+
+            <div class="location-card">
+                <h3>IT Wing</h3>
+                <p>Technical support and infrastructure team.</p>
+            </div>
+
+            <div class="location-card">
+                <h3>Student Services</h3>
+                <p>Counselling and student support services.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 School Training Portal | Internal Use Only
+    </footer>
+
+</body>
+
+</html>
