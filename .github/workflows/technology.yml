@@ -1,0 +1,12 @@
+on:
+  push:
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Echo Basic Information"
+        run: |
+          echo "Action: $github.actor"
+          echo "Action: $github.action"
+          echo "Job ID: $github.job"
